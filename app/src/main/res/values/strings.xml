@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Interview assistance  app</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="question_name">question_name</string>
+    <string name="answer_text">answer_name</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="kotlin">Kotlin</string>
+    <string name="android">Android</string>
+    <string name="java">Java</string>
+    <string name="quiz">Quiz</string>
+    <string name="all_questions">All questions</string>
+    <string name="interval_memories">Interval memories</string>
 </resources>

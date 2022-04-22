@@ -3,6 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/GFox/AndroidStudioProjects/Interview_Assistance_App/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/GFox/AndroidStudioProjects/Interview_Assistance_App/app/src/main/res/layout/fragment_first.xml" value="0.264" />
+        <entry key="..\:/Users/GFox/AndroidStudioProjects/Interview_Assistance_App/app/src/main/res/layout/fragment_fourth.xml" value="0.1" />
+        <entry key="..\:/Users/GFox/AndroidStudioProjects/Interview_Assistance_App/app/src/main/res/layout/fragment_frame_2.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/GFox/AndroidStudioProjects/Interview_Assistance_App/app/src/main/res/layout/fragment_frame_3.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/GFox/AndroidStudioProjects/Interview_Assistance_App/app/src/main/res/layout/fragment_frame_3_2.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/GFox/AndroidStudioProjects/Interview_Assistance_App/app/src/main/res/layout/fragment_second.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/GFox/AndroidStudioProjects/Interview_Assistance_App/app/src/main/res/layout/fragment_third.xml" value="0.20697463768115942" />
+        <entry key="..\:/Users/GFox/AndroidStudioProjects/Interview_Assistance_App/app/src/main/res/layout/navigation_graph.xml" value="0.20697463768115942" />
+        <entry key="..\:/Users/GFox/AndroidStudioProjects/Interview_Assistance_App/app/src/main/res/layout/question_card.xml" value="0.6" />
         <entry key="..\:/Users/dzuba/StudioProjects/Interviewassistanceapp/app/src/main/res/layout/activity_main.xml" value="0.12228260869565218" />
       </map>
     </option>
