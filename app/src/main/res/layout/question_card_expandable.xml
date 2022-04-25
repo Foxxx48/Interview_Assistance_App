@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/question_cardview_expandable"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/app_margin"
+    app:cardElevation="@dimen/card_elevation"
+    app:cardCornerRadius="@dimen/card_corner_radius">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/question_cardview_expandable">
+
+        <!--This is a ConstraintLayout for the fixed portion
+            of the CardView. The elements
+            that lie within the fixed portion of the CardView
+            can be constrained to this layout.-->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/fixed_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+
+            <TextView
+                android:id="@+id/item_card_text_question_card_expandable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/question_name"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="@dimen/item_question_card_name"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/fixed_layout"
+                app:layout_constraintEnd_toEndOf="@+id/fixed_layout"
+                app:layout_constraintStart_toStartOf="@+id/fixed_layout"
+                app:layout_constraintTop_toTopOf="@+id/fixed_layout" />
+
+
+
+            <!--This is ImageButton for the expansion icon.-->
+            <ImageButton
+                android:id="@+id/arrow_button"
+                android:layout_width="@dimen/item_size"
+                android:layout_height="@dimen/item_size"
+                android:src="@drawable/ic_baseline_expand_more_24"
+                app:layout_constraintBottom_toBottomOf="@id/fixed_layout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.950"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!--The following is the expandable portion whose
+            visibility is initially set to 'gone'.
+            The parent LinearLayout contains 3 child LinearLayouts
+            that hold a subject name and an icon each.-->
+        <LinearLayout
+            android:id="@+id/hidden_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fixed_layout">
+
+            <!--Child LinearLayout 1-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/app_margin"
+                    android:layout_marginTop="@dimen/app_margin"
+                    android:text="@string/answer_text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/item_answer_card_name" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
