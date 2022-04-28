@@ -6,48 +6,39 @@ import android.transition.TransitionManager
 import android.view.View
 import android.widget.ImageButton
 import android.widget.LinearLayout
+
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import androidx.cardview.widget.CardView
+import androidx.navigation.NavController
+import androidx.navigation.Navigation
 import com.fox.interviewassistanceapp.R
+import com.fox.interviewassistanceapp.databinding.ActivityMainBinding
+import com.fox.interviewassistanceapp.utilits.APP_ACTIVITY
 
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var arrow: ImageButton
-    lateinit var hiddenView: LinearLayout
-    lateinit var cardView: CardView
+    lateinit var mToolbar: Toolbar
+    lateinit var mNavController: NavController
+    private var _binding: ActivityMainBinding? = null
+    val mBinding get() = _binding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        _binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(mBinding.root)
+        APP_ACTIVITY = this
+        mToolbar = mBinding.toolbar
+        mNavController = Navigation.findNavController(this,R.id.nav_host_fragment)
+        setSupportActionBar(mToolbar)
+        title = getString(R.string.title)
 
-        cardView = findViewById(R.id.item_card_text_question_card_expandable)
-        arrow = findViewById(R.id.arrow_button)
-        hiddenView = findViewById(R.id.hidden_view)
 
-        arrow.setOnClickListener {
-            // If the CardView is already expanded, set its visibility
-            //  to gone and change the expand less icon to expand more.
-            if (hiddenView.getVisibility() == View.VISIBLE) {
+    }
 
-                // The transition of the hiddenView is carried out
-                //  by the TransitionManager class.
-                // Here we use an object of the AutoTransition
-                // Class to create a default transition.
-                TransitionManager.beginDelayedTransition(
-                    cardView,
-                    AutoTransition()
-                )
-                hiddenView.setVisibility(View.GONE)
-                arrow.setImageResource(R.drawable.ic_baseline_expand_more_24)
-            } else {
-                TransitionManager.beginDelayedTransition(
-                    cardView,
-                    AutoTransition()
-                )
-                hiddenView.setVisibility(View.VISIBLE)
-                arrow.setImageResource(R.drawable.ic_baseline_expand_less_24)
-            }
-        }
+    override fun onDestroy() {
+        super.onDestroy()
+        _binding = null
     }
 }

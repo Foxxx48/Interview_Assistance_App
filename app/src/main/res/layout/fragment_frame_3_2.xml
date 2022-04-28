@@ -8,6 +8,8 @@
     android:layout_height="match_parent"
     tools:context=".presentations.screens.Fragment_frame_1">
 
+
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview_fragment_first"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
@@ -17,8 +19,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="parent">
+        app:layout_constraintBottom_toTopOf="parent"/>
 
-    </androidx.recyclerview.widget.RecyclerView>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_add_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="@dimen/app_margin">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

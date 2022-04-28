@@ -17,12 +17,15 @@
         <entry key="..\:/Users/dzuba/StudioProjects/Interview_Assistance_App/app/src/main/res/drawable/ic_baseline_expand_more_24.xml" value="0.135" />
         <entry key="..\:/Users/dzuba/StudioProjects/Interview_Assistance_App/app/src/main/res/drawable/ic_launcher_background.xml" value="0.135" />
         <entry key="..\:/Users/dzuba/StudioProjects/Interview_Assistance_App/app/src/main/res/layout/activity_main.xml" value="0.215625" />
+        <entry key="..\:/Users/dzuba/StudioProjects/Interview_Assistance_App/app/src/main/res/layout/fragment_add_question_card.xml" value="0.4" />
         <entry key="..\:/Users/dzuba/StudioProjects/Interview_Assistance_App/app/src/main/res/layout/fragment_frame_1.xml" value="0.12907608695652173" />
         <entry key="..\:/Users/dzuba/StudioProjects/Interview_Assistance_App/app/src/main/res/layout/fragment_frame_2.xml" value="0.215625" />
         <entry key="..\:/Users/dzuba/StudioProjects/Interview_Assistance_App/app/src/main/res/layout/fragment_frame_3.xml" value="0.215625" />
-        <entry key="..\:/Users/dzuba/StudioProjects/Interview_Assistance_App/app/src/main/res/layout/fragment_frame_3_2.xml" value="0.215625" />
+        <entry key="..\:/Users/dzuba/StudioProjects/Interview_Assistance_App/app/src/main/res/layout/fragment_frame_3_2.xml" value="0.4" />
         <entry key="..\:/Users/dzuba/StudioProjects/Interview_Assistance_App/app/src/main/res/layout/question_card.xml" value="0.264" />
-        <entry key="..\:/Users/dzuba/StudioProjects/Interview_Assistance_App/app/src/main/res/layout/question_card_expandable.xml" value="0.536" />
+        <entry key="..\:/Users/dzuba/StudioProjects/Interview_Assistance_App/app/src/main/res/layout/question_card_expandable.xml" value="0.264" />
+        <entry key="..\:/Users/dzuba/StudioProjects/Interview_Assistance_App/app/src/main/res/menu/main_action_menu.xml" value="0.215625" />
+        <entry key="..\:/Users/dzuba/StudioProjects/Interview_Assistance_App/app/src/main/res/menu/question_card_menu.xml" value="0.215625" />
         <entry key="..\:/Users/dzuba/StudioProjects/Interviewassistanceapp/app/src/main/res/layout/activity_main.xml" value="0.12228260869565218" />
       </map>
     </option>

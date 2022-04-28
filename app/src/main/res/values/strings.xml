@@ -12,4 +12,6 @@
     <string name="quiz">Quiz</string>
     <string name="all_questions">All questions</string>
     <string name="interval_memories">Interval memories</string>
+    <string name="btn_add_question">Добавить</string>
+    <string name="title">Собеседование</string>
 </resources>

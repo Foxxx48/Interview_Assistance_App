@@ -8,6 +8,7 @@ android {
     compileSdk 32
 
     defaultConfig {
+        viewBinding.enabled=true
         applicationId "com.fox.interviewassistanceapp"
         minSdk 22
         targetSdk 32
