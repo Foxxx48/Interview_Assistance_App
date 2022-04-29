@@ -1,15 +1,8 @@
 package com.fox.interviewassistanceapp.presentations
 
 import android.os.Bundle
-import android.transition.AutoTransition
-import android.transition.TransitionManager
-import android.view.View
-import android.widget.ImageButton
-import android.widget.LinearLayout
-
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
-import androidx.cardview.widget.CardView
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.fox.interviewassistanceapp.R
@@ -33,6 +26,7 @@ class MainActivity : AppCompatActivity() {
         mNavController = Navigation.findNavController(this,R.id.nav_host_fragment)
         setSupportActionBar(mToolbar)
         title = getString(R.string.title)
+
 
 
     }
