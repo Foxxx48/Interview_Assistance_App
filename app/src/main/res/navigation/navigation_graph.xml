@@ -7,7 +7,7 @@
     app:startDestination="@id/fragment_frame_1">
     <fragment
         android:id="@+id/fragment_frame_2"
-        android:name="com.fox.interviewassistanceapp.presentations.screens.Fragment_frame_2"
+        android:name="com.fox.interviewassistanceapp.presentations.screens.frame2.Fragment_frame_2"
         android:label="fragment_frame_2"
         tools:layout="@layout/fragment_frame_2" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/fragment_frame_3"
-        android:name="com.fox.interviewassistanceapp.presentations.screens.Fragment_frame_3"
+        android:name="com.fox.interviewassistanceapp.presentations.screens.frame3.Fragment_frame_3"
         android:label="fragment_frame_3"
         tools:layout="@layout/fragment_frame_3" >
         <action
@@ -37,7 +37,7 @@
     </fragment>
     <fragment
         android:id="@+id/fragment_frame_3_2"
-        android:name="com.fox.interviewassistanceapp.presentations.screens.Fragment_frame_3_2"
+        android:name="com.fox.interviewassistanceapp.presentations.screens.frame3_2.Fragment_frame_3_2"
         android:label="Fragment_frame_3_2" >
         <action
             android:id="@+id/action_fragment_frame_3_2_to_fragment_frame_3"

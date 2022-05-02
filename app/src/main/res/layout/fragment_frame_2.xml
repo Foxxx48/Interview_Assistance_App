@@ -5,11 +5,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".presentations.screens.Fragment_frame_2">
+    tools:context=".presentations.screens.frame2.Fragment_frame_2">
 
 
     <Button
-        android:id="@+id/button1_frame.2"
+        android:id="@+id/button1_frame_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/kotlin"
@@ -26,7 +26,7 @@
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button1_frame.2"
+        app:layout_constraintTop_toBottomOf="@id/button1_frame_2"
         app:layout_constraintBottom_toTopOf="@id/button3_frame_2"/>
 
     <Button
