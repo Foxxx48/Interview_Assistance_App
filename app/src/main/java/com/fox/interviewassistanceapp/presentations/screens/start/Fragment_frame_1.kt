@@ -6,7 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.fox.interviewassistanceapp.R
 import com.fox.interviewassistanceapp.databinding.FragmentFrame1Binding
+import com.fox.interviewassistanceapp.utilits.APP_ACTIVITY
 import com.fox.interviewassistanceapp.utilits.TYPE_ROOM
 
 
@@ -32,7 +34,9 @@ class Fragment_frame_1 : Fragment() {
     private fun initialization() {
         mViewModel = ViewModelProvider(this).get(FragmentFrame1ViewModel::class.java)
         mBinding.button1Frame1.setOnClickListener {
-            mViewModel.initDatabase(TYPE_ROOM)
+            mViewModel.initDatabase(TYPE_ROOM) {
+                APP_ACTIVITY.mNavController.navigate(R.id.action_fragment_frame_1_to_fragment_frame_2)
+            }
         }
 
 
