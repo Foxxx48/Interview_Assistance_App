@@ -2,18 +2,18 @@ package com.fox.interviewassistanceapp.database.room
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
-import com.fox.interviewassistanceapp.models.Question
+import com.fox.interviewassistanceapp.models.QuestionModel
 
 @Dao
 interface AppRoomDao {
 
     @Query("SELECT * FROM questions_table")
-    fun getAllQuestions(): LiveData<List<Question>>
+    fun getAllQuestions(): LiveData<List<QuestionModel>>
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
-    suspend fun insert(question: Question)
+    suspend fun insert(questionModel: QuestionModel)
 
     @Delete
-    suspend fun delete(question: Question)
+    suspend fun delete(questionModel: QuestionModel)
 
 }

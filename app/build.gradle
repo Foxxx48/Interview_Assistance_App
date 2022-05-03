@@ -2,6 +2,7 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id 'org.jetbrains.kotlin.kapt'
+    id 'kotlin-android-extensions'
 //    id 'androidx.navigation.safeargs'
 }
 
@@ -11,6 +12,7 @@ android {
     defaultConfig {
 
         viewBinding.enabled=true
+
         applicationId "com.fox.interviewassistanceapp"
         minSdk 22
         targetSdk 32

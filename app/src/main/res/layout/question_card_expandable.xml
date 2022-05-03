@@ -82,6 +82,7 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:id="@+id/item_card_text_answer_card_expandable"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/app_margin"

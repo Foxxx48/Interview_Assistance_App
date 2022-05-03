@@ -1,11 +1,10 @@
 package com.fox.interviewassistanceapp.database
 
 import androidx.lifecycle.LiveData
-import com.fox.interviewassistanceapp.domain.models.QuestionModel
-import com.fox.interviewassistanceapp.models.Question
+import com.fox.interviewassistanceapp.models.QuestionModel
 
 interface DatabaseRepository {
-    val allQuestions:LiveData<List<Question>>
-    suspend fun insert(question: Question, onSuccess:()-> Unit)
-    suspend fun delete(question: Question, onSuccess:()-> Unit)
+    val allQuestions:LiveData<List<QuestionModel>>
+    suspend fun insert(questionModel: QuestionModel, onSuccess:()-> Unit)
+    suspend fun delete(questionModel: QuestionModel, onSuccess:()-> Unit)
 }

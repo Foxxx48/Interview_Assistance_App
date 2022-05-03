@@ -38,7 +38,10 @@ class Fragment_frame_1 : Fragment() {
                 APP_ACTIVITY.mNavController.navigate(R.id.action_fragment_frame_1_to_fragment_frame_2)
             }
         }
+    }
 
-
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }

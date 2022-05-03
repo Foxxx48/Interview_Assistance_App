@@ -4,9 +4,9 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.fox.interviewassistanceapp.models.Question
+import com.fox.interviewassistanceapp.models.QuestionModel
 
-@Database(entities = [Question::class], version = 1)
+@Database(entities = [QuestionModel::class], version = 1)
 abstract class AppRoomDatabase: RoomDatabase() {
     abstract fun getRoomDao():AppRoomDao
 

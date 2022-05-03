@@ -1,7 +1,5 @@
 package com.fox.interviewassistanceapp.domain.usecase
 
-import com.fox.interviewassistanceapp.domain.models.QuestionModel
-
 class SetAllQuestionUseCase() {
 
 //    fun setAllQuestions(): List<QuestionModel> {

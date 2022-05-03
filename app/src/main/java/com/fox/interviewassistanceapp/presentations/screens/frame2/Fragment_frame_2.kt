@@ -33,6 +33,10 @@ class Fragment_frame_2 : Fragment() {
         mBinding.button2Frame2.setOnClickListener{
             APP_ACTIVITY.mNavController.navigate(R.id.action_fragment_frame_2_to_fragment_frame_3)
         }
+    }
 
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }

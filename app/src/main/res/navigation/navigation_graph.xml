@@ -42,5 +42,17 @@
         <action
             android:id="@+id/action_fragment_frame_3_2_to_fragment_frame_3"
             app:destination="@id/fragment_frame_3" />
+        <action
+            android:id="@+id/action_fragment_frame_3_2_to_add_question_card"
+            app:destination="@id/add_question_card" />
+    </fragment>
+    <fragment
+        android:id="@+id/add_question_card"
+        android:name="com.fox.interviewassistanceapp.presentations.screens.add_question_card.Add_question_card"
+        android:label="fragment_add_question_card"
+        tools:layout="@layout/fragment_add_question_card" >
+        <action
+            android:id="@+id/action_add_question_card_to_fragment_frame_3_2"
+            app:destination="@id/fragment_frame_3_2" />
     </fragment>
 </navigation>
